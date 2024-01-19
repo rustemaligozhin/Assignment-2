@@ -1,28 +1,8 @@
 public class Student extends Person{
-    private static int id_gen = 1;
-    private int id;
-    private String name;
-
-    private String surname;
     private double gpa;
 
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
-
-    public String getSurname() {
-        return surname;
+    public Student() {
+        super();
     }
 
     public void setGpa(double gpa) {
@@ -31,10 +11,6 @@ public class Student extends Person{
 
     public double getGpa() {
         return gpa;
-    }
-
-    public Student(){
-        this.id = id_gen++;
     }
 
     public Student(String name, String surname, double gpa){
@@ -59,7 +35,7 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return "Student: " + id + ". " + name + " " + surname + " earns " + getPaymentAmount() + " tenge";
+        return "Student: " + " earns " + getPaymentAmount() + " tenge";
     }
 
 
