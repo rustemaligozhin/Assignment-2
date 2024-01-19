@@ -26,11 +26,9 @@ public class Employee extends Person {
     }
 
     public Employee(String name, String surname, String position, double salary){
-        this();
-        setName(name);
-        setSurname(surname);
-        setPosition(position);
+        super(name, surname);
         setSalary(salary);
+        setPosition(position);
     }
 
     @Override
@@ -43,7 +41,7 @@ public class Employee extends Person {
         return Double.compare(this.getPaymentAmount(), o.getPaymentAmount());
     }
 
-    @Override
+
     public String toString() {
         return position + ": " + " earns " + getPaymentAmount() + " tenge";
     }
