@@ -43,6 +43,6 @@ public class Employee extends Person {
 
 
     public String toString() {
-        return position + ": " + " earns " + getPaymentAmount() + " tenge";
+        return position + ": " + super.toString() + " " + getPaymentAmount();
     }
 }

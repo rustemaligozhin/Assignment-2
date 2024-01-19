@@ -14,9 +14,7 @@ public class Student extends Person{
     }
 
     public Student(String name, String surname, double gpa){
-        this();
-        setName(name);
-        setSurname(surname);
+        super(name, surname);
         setGpa(gpa);
     }
 
@@ -35,7 +33,7 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return "Student: " + " earns " + getPaymentAmount() + " tenge";
+        return "Student: " + super.toString() + " " + getPaymentAmount();
     }
 
 
